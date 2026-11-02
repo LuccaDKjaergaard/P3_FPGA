@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Nov  2 10:17:33 2026
+# Process ID         : 45788
+# Current directory  : C:/Users/ldybt/Documents/Vivado/xadc
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent50204 C:\Users\ldybt\Documents\Vivado\xadc\xadc.xpr
+# Log file           : C:/Users/ldybt/Documents/Vivado/xadc/vivado.log
+# Journal file       : C:/Users/ldybt/Documents/Vivado/xadc\vivado.jou
+# Running On         : Nitro_14
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 8645HS w/ Radeon 760M Graphics
+# CPU Frequency      : 4292 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16437 MB
+# Swap memory        : 18253 MB
+# Total Virtual      : 34691 MB
+# Available Virtual  : 7044 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ldybt/Documents/Vivado/xadc/xadc.xpr
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse C:/Users/ldybt/Documents/Vivado/CmodA7_Master.xdc
+import_files -fileset constrs_1 C:/Users/ldybt/Documents/Vivado/CmodA7_Master.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_simulation
+source XADC_reader.tcl
+restart
+add_force {/XADC_reader/sysclk} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/XADC_reader/xa_p} -radix hex {00 0ns} {FF 50000ps} -repeat_every 100000ps
+close_sim

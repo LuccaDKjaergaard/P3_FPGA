@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1793617247">
+  <File Type="PA-TCL" Name="XADC_reader.tcl"/>
+  <File Type="REPORTS-TCL" Name="XADC_reader_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="XADC_reader_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="XADC_reader_opt.dcp"/>
+  <File Type="OPT-DRC" Name="XADC_reader_drc_opted.rpt"/>
+  <File Type="OPT-UTIL" Name="XADC_reader_utilization_opted.rpt"/>
+  <File Type="OPT-UTIL-PB" Name="XADC_reader_utilization_opted.pb"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="XADC_reader_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="XADC_reader.hwdef"/>
+  <File Type="OPT-TIMING" Name="XADC_reader_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="XADC_reader_rqa_opted.pb"/>
+  <File Type="PWROPT-DCP" Name="XADC_reader_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="XADC_reader_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="XADC_reader_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="XADC_reader_placed.dcp"/>
+  <File Type="PLACE-IO" Name="XADC_reader_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="XADC_reader_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="XADC_reader_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="XADC_reader_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="XADC_reader_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="XADC_reader_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="XADC_reader_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="XADC_reader_timing_summary_placed.rpt"/>
+  <File Type="PLACE-RQA-PB" Name="XADC_reader_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="XADC_reader_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="XADC_reader_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="XADC_reader_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="XADC_reader_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="XADC_reader_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="XADC_reader_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="XADC_reader_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="XADC_reader_routed_bb.dcp"/>
+  <File Type="ROUTE-UTIL" Name="XADC_reader_utilization_routed.rpt"/>
+  <File Type="ROUTE-UTIL-PB" Name="XADC_reader_utilization_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="XADC_reader_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="XADC_reader_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="XADC_reader_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="XADC_reader_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="XADC_reader_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="XADC_reader_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="XADC_reader_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="XADC_reader_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="XADC_reader_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="XADC_reader_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="XADC_reader_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="XADC_reader_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="XADC_reader_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="XADC_reader_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="XADC_reader_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="XADC_reader_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="XADC_reader_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="XADC_reader_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="XADC_reader_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="XADC_reader_rqs_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="XADC_reader_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="XADC_reader_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="XADC_reader_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="XADC_reader_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="XADC_reader_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="XADC_reader_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="XADC_reader_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="XADC_reader_bus_skew_postroute_physopted.rpx"/>
+  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="XADC_reader.nts"/>
+  <File Type="NOC_SOLUTION_FILE" Name="XADC_reader.ncr"/>
+  <File Type="BG-BIT" Name="XADC_reader.bit"/>
+  <File Type="BG-XML" Name="XADC_reader.xml"/>
+  <File Type="BG-WRITE-BITSTREAM-XML" Name="write_bitstream.xml"/>
+  <File Type="BG-BIN" Name="XADC_reader.bin"/>
+  <File Type="BITSTR-MSK" Name="XADC_reader.msk"/>
+  <File Type="BITSTR-RBT" Name="XADC_reader.rbt"/>
+  <File Type="BITSTR-NKY" Name="XADC_reader.nky"/>
+  <File Type="BITSTR-BMM" Name="XADC_reader_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="XADC_reader.mmi"/>
+  <File Type="PDI-FILE" Name="XADC_reader.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="XADC_reader_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="XADC_reader_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="XADC_reader.rcfi"/>
+  <File Type="CFI_FILE" Name="XADC_reader.cfi"/>
+  <File Type="RNPI_FILE" Name="XADC_reader.rnpi"/>
+  <File Type="RCDO-FILE" Name="XADC_reader.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="XADC_reader_markers.rnpi"/>
+  <File Type="MARKER-RCDO-FILE" Name="XADC_reader_markers.rcdo"/>
+  <File Type="BOOT_RNPI_FILE" Name="XADC_reader_boot.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="XADC_reader_boot_markers.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="XADC_reader_pld.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="XADC_reader_pld_markers.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="XADC_reader_pld_mask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="XADC_reader_pld_shutdown.rnpi"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="XADC_reader_pld_unmask.rnpi"/>
+  <File Type="PL-RCDO-FILE" Name="XADC_reader_pld.rcdo"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="XADC_reader_pld_clear.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="XADC_reader_pld_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="XADC_reader_pld_mask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="XADC_reader_pld_unmask_markers.rcdo"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="XADC_reader_pld_unmask.rcdo"/>
+  <File Type="NPI_FILE" Name="XADC_reader.npi"/>
+  <File Type="RBD_FILE" Name="XADC_reader.rbd"/>
+  <File Type="MMI-FILE" Name="XADC_reader.mmi"/>
+  <File Type="BIF-FILE" Name="XADC_reader.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="XADC_reader_boot.bif"/>
+  <File Type="PL-BIF-FILE" Name="XADC_reader_pld.bif"/>
+  <File Type="LTX-FILE" Name="XADC_reader.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="XADC_reader_boot.ltx"/>
+  <File Type="PL-LTX-FILE" Name="XADC_reader_pld.ltx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="XADC_reader.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="XADC_reader.sysdef"/>
+  <File Type="BG-BGN" Name="XADC_reader.bgn"/>
+  <File Type="BG-DRC" Name="XADC_reader.drc"/>
+  <File Type="RDI-RDI" Name="XADC_reader.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="XADC_reader_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="XADC_reader_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/xadc.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="XADC_reader"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Vivado/CmodA7_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CmodA7_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1788858497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2026"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="xadc_wiz_0"/>
+</GenRun>

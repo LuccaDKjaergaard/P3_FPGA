@@ -1,0 +1,7 @@
+Running: xsim.dir/XADC_reader_behav/xsimk.exe -simmode gui -wdb XADC_reader_behav.wdb -simrunnum 0 -socket 57979
+Design successfully loaded
+Design Loading Memory Usage: 19092 KB (Peak: 19092 KB)
+Design Loading CPU Usage: 155 ms
+Simulation completed
+Simulation Memory Usage: 20064 KB (Peak: 20064 KB)
+Simulation CPU Usage: 312 ms

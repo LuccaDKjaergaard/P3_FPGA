@@ -1,0 +1,135 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 08-sep-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Nov  2 10:17:33 2026
+# Process ID         : 45788
+# Current directory  : C:/Users/ldybt/Documents/Vivado/xadc
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent50204 C:\Users\ldybt\Documents\Vivado\xadc\xadc.xpr
+# Log file           : C:/Users/ldybt/Documents/Vivado/xadc/vivado.log
+# Journal file       : C:/Users/ldybt/Documents/Vivado/xadc\vivado.jou
+# Running On         : Nitro_14
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 8645HS w/ Radeon 760M Graphics
+# CPU Frequency      : 4292 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16437 MB
+# Swap memory        : 18253 MB
+# Total Virtual      : 34691 MB
+# Available Virtual  : 7044 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ldybt/Documents/Vivado/xadc/xadc.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/harry/Downloads/Cmod-A7-35T-XADC-2020.1-1/xadc' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:16 . Memory (MB): peak = 1735.855 ; gain = 336.246
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse C:/Users/ldybt/Documents/Vivado/CmodA7_Master.xdc
+import_files -fileset constrs_1 C:/Users/ldybt/Documents/Vivado/CmodA7_Master.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Nov  2 11:24:14 2026] Launched synth_1...
+Run output will be captured here: C:/Users/ldybt/Documents/Vivado/xadc/xadc.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Mon Nov  2 11:27:38 2026] Launched impl_1...
+Run output will be captured here: C:/Users/ldybt/Documents/Vivado/xadc/xadc.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Nov  2 11:29:47 2026] Launched impl_1...
+Run output will be captured here: C:/Users/ldybt/Documents/Vivado/xadc/xadc.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Nov  2 11:39:59 2026] Launched synth_1...
+Run output will be captured here: C:/Users/ldybt/Documents/Vivado/xadc/xadc.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation  -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Nov  2 11:40:09 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'XADC_reader'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ldybt/Documents/Vivado/xadc/xadc.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2026.1/Vivado/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/AMDDesignTools/2026.1/Vivado/data/xsim/xsim.ini' copied to run dir:'C:/Users/ldybt/Documents/Vivado/xadc/xadc.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'XADC_reader' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ldybt/Documents/Vivado/xadc/xadc.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj XADC_reader_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ldybt/Documents/Vivado/xadc/xadc.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xadc_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ldybt/Documents/Vivado/xadc/xadc.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj XADC_reader_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ldybt/Documents/Vivado/xadc/xadc.srcs/sources_1/new/xadc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'XADC_reader'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ldybt/Documents/Vivado/xadc/xadc.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot XADC_reader_behav xil_defaultlib.XADC_reader xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot XADC_reader_behav xil_defaultlib.XADC_reader xil_defaultlib.glbl -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.XADC(INIT_40=16'b010100,INIT_41=...
+Compiling module xil_defaultlib.xadc_wiz_0
+Compiling architecture behavioral of entity xil_defaultlib.xadc_reader
+Built simulation snapshot XADC_reader_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1936.824 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ldybt/Documents/Vivado/xadc/xadc.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "XADC_reader_behav -key {Behavioral:sim_1:Functional:XADC_reader} -tclbatch {XADC_reader.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source XADC_reader.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: file design.txt could not be opened
+ *** Warning: The analog data file design.txt for XADC instance XADC_reader.XADC_inst.inst was not found. Use the SIM_MONITOR_FILE parameter to specify the analog data file name or use the default name: design.txt.
+
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'XADC_reader_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1936.824 ; gain = 0.000
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+add_force {/XADC_reader/sysclk} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/XADC_reader/xa_p} -radix hex {00 0ns} {FF 50000ps} -repeat_every 100000ps
+ERROR: [Simtcl 6-179] Couldn't add force for the following reason: Illegal value 'FF': Object size 1 does not match size of given value FF.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  2 11:41:58 2026...
