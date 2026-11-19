@@ -45,26 +45,29 @@ architecture Behavioral of xadc_uart_top is
     end component;
 
     -- 12 MHz / 104 = 115384 baud (0.16% from 115200 baud).
-    constant BAUD_DIV : integer := 104;
+    constant BAUD_DIV  : integer := 104;
     signal baud_count  : integer range 0 to BAUD_DIV - 1 := 0;
     signal tx_busy     : STD_LOGIC := '0';
     signal tx_shift    : STD_LOGIC_VECTOR(9 downto 0) := (others => '1');
-    signal tx_bit      : integer range 0 to 9 := 0;
-    signal tx_char     : integer range 0 to 5 := 0;
+    signal tx_bit      : integer range 0 to 9 := 0; --why 10?
+    constant CHAR_NUM  : integer := 8; -- e.g. A1023; + CR + LF
+    signal tx_char     : integer range 0 to CHAR_NUM - 1 := 0; 
     signal tx_value    : integer range 0 to 4095 := 0;
 
     -- Function for converting decimal value into ascii
-    -- Returns the ascii value of "0000", CR or LF
+    -- Returns the ascii value of "A", a 4-cifre integer, ";", CR or LF
     function ascii_byte(n : integer; value : integer)
         return STD_LOGIC_VECTOR is
         variable c : integer;
     begin
         case n is
-            when 0 => c := 48 + (value / 1000); --48 = 0 in ASCII
-            when 1 => c := 48 + (value / 100) mod 10;
-            when 2 => c := 48 + (value / 10) mod 10;
-            when 3 => c := 48 + value mod 10;
-            when 4 => c := 13;  -- carriage return (CR)
+            when 0 => c := 65; -- "A"
+            when 1 => c := 48 + (value / 1000); --48 = 0 in ASCII
+            when 2 => c := 48 + (value / 100) mod 10;
+            when 3 => c := 48 + (value / 10) mod 10;
+            when 4 => c := 48 + value mod 10;
+            when 5 => c := 59; -- ";"
+            when 6 => c := 13;  -- carriage return (CR)
             when others => c := 10;  -- line feed (LF)
         end case;
         return STD_LOGIC_VECTOR(to_unsigned(c, 8));
@@ -107,6 +110,7 @@ begin
     uart_tx <= tx_shift(0);  -- UART idle = logic high, tx_shift is initialised high
     -- UART transmitter: 1 start bit, 8 data bits (LSB first), 1 stop bit.
     -- Six characters per reading: e.g. "2048" + CR + LF.
+    -- 8 characters per reading: e.g. "A2048;" + CR + LF.
     process(sysclk)
     begin
         if rising_edge(sysclk) then
@@ -125,7 +129,7 @@ begin
                     baud_count <= 0; --reset baud counter
 
                     if tx_bit = 9 then --if we have shifted all bits
-                        if tx_char = 5 then --if we have shifted all characters
+                        if tx_char = CHAR_NUM - 1 then --if we have shifted all characters
                             tx_shift <= (others => '1');
                             tx_busy <= '0';
                         else --if tx_char < 5

@@ -64,10 +64,10 @@
         "SINGLE_CHANNEL_ENABLE_CALIBRATION": [ { "value": "true", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "BIPOLAR_OPERATION": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "SINGLE_CHANNEL_ACQUISITION_TIME": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
-        "CHANNEL_AVERAGING": [ { "value": "None", "resolve_type": "user", "usage": "all" } ],
-        "ADC_OFFSET_CALIBRATION": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
+        "CHANNEL_AVERAGING": [ { "value": "256", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
+        "ADC_OFFSET_CALIBRATION": [ { "value": "true", "value_src": "user", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "ADC_OFFSET_AND_GAIN_CALIBRATION": [ { "value": "true", "resolve_type": "user", "format": "bool", "usage": "all" } ],
-        "SENSOR_OFFSET_CALIBRATION": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
+        "SENSOR_OFFSET_CALIBRATION": [ { "value": "true", "value_src": "user", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "SENSOR_OFFSET_AND_GAIN_CALIBRATION": [ { "value": "true", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "ENABLE_EXTERNAL_MUX": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "EXTERNAL_MUX_CHANNEL": [ { "value": "VP_VN", "resolve_type": "user", "usage": "all" } ],
@@ -199,8 +199,8 @@
         "C_HAS_VCCPINT_ALARM": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_HAS_VCCPAUX_ALARM": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_HAS_VCCDDRO_ALARM": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_CONFIGURATION_R0": [ { "value": "20", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_CONFIGURATION_R1": [ { "value": "12704", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_CONFIGURATION_R0": [ { "value": "12308", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_CONFIGURATION_R1": [ { "value": "12784", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_CONFIGURATION_R2": [ { "value": "512", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_ALARM_LIMIT_R0": [ { "value": "46573", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_ALARM_LIMIT_R1": [ { "value": "22500", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -361,5 +361,5 @@
       }
     }
   },
-  "checksum": "1285c95e"
+  "checksum": "a7f8a678"
 }
