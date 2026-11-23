@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:01:26 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Nov 23 15:29:28 2026
+# Process ID         : 104754
+# Current directory  : /home/dintil/Vivado/Projects/project_MatlabTest/project_MatlabTest.runs/synth_1
+# Command line       : vivado -log xadc_uart_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xadc_uart_top.tcl
+# Log file           : /home/dintil/Vivado/Projects/project_MatlabTest/project_MatlabTest.runs/synth_1/xadc_uart_top.vds
+# Journal file       : /home/dintil/Vivado/Projects/project_MatlabTest/project_MatlabTest.runs/synth_1/vivado.jou
+# Running On         : cachy-fartelda
+# Platform           : cachyos
+# Operating System   : CachyOS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13500H
+# CPU Frequency      : 1590.124 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 16
+# Host memory        : 16486 MB
+# Swap memory        : 16485 MB
+# Total Virtual      : 32971 MB
+# Available Virtual  : 22417 MB
+#-----------------------------------------------------------
+source xadc_uart_top.tcl -notrace
